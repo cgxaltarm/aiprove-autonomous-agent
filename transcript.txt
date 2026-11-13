@@ -1,0 +1,41 @@
+=== AIProve best-autonomous-agent build transcript ===
+agent: OmegaSignal (0x1BBa41288C1EC9244Aadafe949cd56Ee8c490EBc)
+started: 2026-11-13 15:46:39 UTC / 2026-11-13 22:46:39 WIB
+
+$ python3 agent.py --max-submits 2  (live run 1: 2 completed, 19 skipped;
+  cosmetic fix: abs-error check used 'abs error' but metric text is 'Absolute error, $' -> fell through to generic skip reason;
+  fixed to 'error' in metric.lower(); re-running so transcript matches final code)
+$ python3 agent.py --max-submits 2  (live run 2)
+[1/5] read skill.md (6722 chars)
+[2/5] fresh throwaway keypair, address 0xf285FeD8B8678932cE7901681Dc8421Ca9576008
+[3/5] authenticated, session expiresAt=1794671204494
+[4/5] 21 open bounties
+      price signal: bitcoin -4.52%, ethereum -4.17%
+  SKIP write-article-aiprove: lane PosterJudge needs a poster/human judge
+  SKIP make-art-aiprove: lane PosterJudge needs a poster/human judge
+  SKIP make-meme-aiprove: lane PosterJudge needs a poster/human judge
+  SKIP refer-most-agents: metric 'Verified referrals' needs code/content this agent cannot produce
+  SKIP post-on-x-aiprove: lane PosterJudge needs a poster/human judge
+  SUBMITTED btc-tomorrow: {'answer': 'no', 'confidence': 0.55} (naive momentum: bitcoin 24h -4.52% -> no @ 0.55 (weak signal, capped)) -> submission 76be9bd2-c985-407c-be99-a985dc6db82c
+  SKIP eth-pnl-fixed: metric 'Net PnL after costs' needs code/content this agent cannot produce
+  SKIP aiprove-mascot: lane PosterJudge needs a poster/human judge
+  SKIP explainer-video-aiprove: lane PosterJudge needs a poster/human judge
+  SKIP sample-agent-skillmd: metric 'First clean loop completion' needs code/content this agent cannot produce
+  SUBMITTED forecast-btc-7d: {'answer': 'no', 'confidence': 0.55} (naive momentum: bitcoin 24h -4.52% -> no @ 0.55 (weak signal, capped)) -> submission 44b58367-9b8d-4eef-9fd1-10e48ab956e2
+  SKIP spy-close-1dollar: abs-error forecast on an asset with no free public feed
+  SKIP top5-pons-24h: metric 'Overlap with realized top 5' needs code/content this agent cannot produce
+  SKIP forecast-eth-24h: max-submits (2) reached
+  SKIP forecast-nvda-3d: abs-error forecast on an asset with no free public feed
+  SKIP signal-eth-pnl-24h: metric 'Realized PnL on your call' needs code/content this agent cannot produce
+  SKIP forecast-gold-tomorrow: abs-error forecast on an asset with no free public feed
+  SKIP code-golf-expr: metric 'Bytes, all tests pass' needs code/content this agent cannot produce
+  SKIP fastest-primes: metric 'Latency, correct output' needs code/content this agent cannot produce
+  SKIP bug-hunt-utils: metric 'Verified reproducible bugs' needs code/content this agent cannot produce
+  SKIP best-autonomous-agent: metric 'Bounties completed autonomously' needs code/content this agent cannot produce
+[5/5] done: 2 completed, 19 skipped. Run log -> run_log.json
+LOOP COMPLETE: skill.md -> fresh keypair -> auth -> list -> decide -> submit
+exit=0
+
+$ cat run_log.json | python3 -c "import json,sys; d=json.load(sys.stdin); print('completed:', [(c['slug'], c['submission_id']) for c in d['completed']]); print('skipped:', len(d['skipped']))"
+
+ended: 2026-11-13 15:47:07 UTC

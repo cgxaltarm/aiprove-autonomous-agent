@@ -1,0 +1,208 @@
+{
+  "decisions": [
+    {
+      "slug": "write-article-aiprove",
+      "action": "skip",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "make-art-aiprove",
+      "action": "skip",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "make-meme-aiprove",
+      "action": "skip",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "refer-most-agents",
+      "action": "skip",
+      "reason": "metric 'Verified referrals' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "post-on-x-aiprove",
+      "action": "skip",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "btc-tomorrow",
+      "action": "submit",
+      "prediction": {
+        "answer": "no",
+        "confidence": 0.55
+      }
+    },
+    {
+      "slug": "eth-pnl-fixed",
+      "action": "skip",
+      "reason": "metric 'Net PnL after costs' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "aiprove-mascot",
+      "action": "skip",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "explainer-video-aiprove",
+      "action": "skip",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "sample-agent-skillmd",
+      "action": "skip",
+      "reason": "metric 'First clean loop completion' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "forecast-btc-7d",
+      "action": "submit",
+      "prediction": {
+        "answer": "no",
+        "confidence": 0.55
+      }
+    },
+    {
+      "slug": "spy-close-1dollar",
+      "action": "skip",
+      "reason": "abs-error forecast on an asset with no free public feed"
+    },
+    {
+      "slug": "top5-pons-24h",
+      "action": "skip",
+      "reason": "metric 'Overlap with realized top 5' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "forecast-nvda-3d",
+      "action": "skip",
+      "reason": "abs-error forecast on an asset with no free public feed"
+    },
+    {
+      "slug": "signal-eth-pnl-24h",
+      "action": "skip",
+      "reason": "metric 'Realized PnL on your call' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "forecast-gold-tomorrow",
+      "action": "skip",
+      "reason": "abs-error forecast on an asset with no free public feed"
+    },
+    {
+      "slug": "code-golf-expr",
+      "action": "skip",
+      "reason": "metric 'Bytes, all tests pass' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "fastest-primes",
+      "action": "skip",
+      "reason": "metric 'Latency, correct output' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "bug-hunt-utils",
+      "action": "skip",
+      "reason": "metric 'Verified reproducible bugs' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "best-autonomous-agent",
+      "action": "skip",
+      "reason": "metric 'Bounties completed autonomously' needs code/content this agent cannot produce"
+    }
+  ],
+  "completed": [
+    {
+      "slug": "btc-tomorrow",
+      "prediction": {
+        "answer": "no",
+        "confidence": 0.55
+      },
+      "submission_id": "76be9bd2-c985-407c-be99-a985dc6db82c",
+      "reason": "naive momentum: bitcoin 24h -4.52% -> no @ 0.55 (weak signal, capped)"
+    },
+    {
+      "slug": "forecast-btc-7d",
+      "prediction": {
+        "answer": "no",
+        "confidence": 0.55
+      },
+      "submission_id": "44b58367-9b8d-4eef-9fd1-10e48ab956e2",
+      "reason": "naive momentum: bitcoin 24h -4.52% -> no @ 0.55 (weak signal, capped)"
+    }
+  ],
+  "skipped": [
+    {
+      "slug": "write-article-aiprove",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "make-art-aiprove",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "make-meme-aiprove",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "refer-most-agents",
+      "reason": "metric 'Verified referrals' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "post-on-x-aiprove",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "eth-pnl-fixed",
+      "reason": "metric 'Net PnL after costs' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "aiprove-mascot",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "explainer-video-aiprove",
+      "reason": "lane PosterJudge needs a poster/human judge"
+    },
+    {
+      "slug": "sample-agent-skillmd",
+      "reason": "metric 'First clean loop completion' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "spy-close-1dollar",
+      "reason": "abs-error forecast on an asset with no free public feed"
+    },
+    {
+      "slug": "top5-pons-24h",
+      "reason": "metric 'Overlap with realized top 5' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "forecast-eth-24h",
+      "reason": "max-submits reached"
+    },
+    {
+      "slug": "forecast-nvda-3d",
+      "reason": "abs-error forecast on an asset with no free public feed"
+    },
+    {
+      "slug": "signal-eth-pnl-24h",
+      "reason": "metric 'Realized PnL on your call' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "forecast-gold-tomorrow",
+      "reason": "abs-error forecast on an asset with no free public feed"
+    },
+    {
+      "slug": "code-golf-expr",
+      "reason": "metric 'Bytes, all tests pass' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "fastest-primes",
+      "reason": "metric 'Latency, correct output' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "bug-hunt-utils",
+      "reason": "metric 'Verified reproducible bugs' needs code/content this agent cannot produce"
+    },
+    {
+      "slug": "best-autonomous-agent",
+      "reason": "metric 'Bounties completed autonomously' needs code/content this agent cannot produce"
+    }
+  ]
+}
